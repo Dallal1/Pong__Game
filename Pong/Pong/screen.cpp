@@ -45,10 +45,11 @@ int main()
 
 		BeginDrawing();
 
-			ClearBackground(RAYWHITE);
+			ClearBackground(BLACK);
+			DrawLine(ScreenWidth / 2, 0, ScreenWidth / 2, ScreenHigth, RED); 
 			DrawRectangle(posX, posY, 8, 60, BLUE);
-			DrawRectangle(400, 225, 15, 15, GREEN);
-
+			DrawCircle(ScreenWidth / 2, ScreenHigth / 2, 10, GREEN);
+			DrawRectangle(posX, posY, 8, 60, BLUE);
 		EndDrawing();
 	}
 
