@@ -11,8 +11,10 @@ public:
 	int speed_x, speed_y;
 
 	//Score
-	const char* scoreText;
-	int min;
+	int min_wall = 1;
+	int min_cpu = 1;
+	const char* scoreText_wall;
+	const char* scoreText_cpu;
 
 	void Draw()
 	{
@@ -24,25 +26,29 @@ public:
 		x = x + speed_x;
 		y = y + speed_y;
 
+
 		//Screen Fizik
 		if (x + radius >= GetScreenWidth())
 		{ 
 			speed_x *= -1;
 			cout << "hello" << endl;
-			scoreText = TextFormat("Score: %i", min++);
-
+			scoreText_wall = TextFormat("Score: %i", min_wall++);
 		}
 		if (x - radius <= 0)
 		{
 			speed_x *= -1;
 			cout << "dallal" << endl;
+			scoreText_cpu = TextFormat("score: %i", min_cpu++);
 		}
 		if (y + radius >= GetScreenHeight() || y - radius <= 0)
 			speed_y *= -1;
+
+		DrawText(scoreText_wall, 560, 10, 20, BLUE);
+		DrawText(scoreText_cpu, 150, 10, 20, BLUE);
 	}
 };
 
-class Wall: public Ball
+class Wall
 {
 public:
 	float pos_x, pos_y;
@@ -53,7 +59,6 @@ public:
 	void Draw()
 	{
 		DrawRectangle(pos_x, pos_y, width, higth, BLUE);
-		DrawText(scoreText, 10, 10, 20, BLUE);
 	}
 
 	void Update()
@@ -125,7 +130,7 @@ int main()
 	//Move The Wall
 	wall.width = 25;
 	wall.higth = 120;
-	wall.pos_x = ScreenWidth - wall.width - 10;
+	wall.pos_x = ScreenWidth - wall.width - 2;
 	wall.pos_y = ScreenHigth / 2 - wall.higth / 2;
 	wall.speed_x = 2;
 	wall.speed_y = 2;
@@ -133,7 +138,7 @@ int main()
 	//CPU
 	cpu.width = 25;
 	cpu.higth = 120;
-	cpu.pos_x = 10;
+	cpu.pos_x = 2;
 	cpu.pos_y = ScreenHigth / 2;
 	cpu.speed_y = 2;
 

@@ -1,17 +1,17 @@
 ﻿  screen.cpp
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(19,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(19,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(19,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(55,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(55,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(55,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(55,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(90,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(90,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(90,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(90,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(151,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(21,20): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(21,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(21,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(61,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(61,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(61,24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(61,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(95,39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(95,32): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(95,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(95,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(156,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\pong\screen.cpp(161,63): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   pong.vcxproj -> C:\Users\mdallal\Desktop\my_games\Pong__Game\pong\x64\Debug\pong.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
