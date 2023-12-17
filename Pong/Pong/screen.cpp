@@ -3,51 +3,6 @@
 
 using namespace std;
 
-class Ball
-{
-public:
-	int radius;
-	float x, y;
-	int speed_x, speed_y;
-
-	//Score
-	int min_wall = 1;
-	int min_cpu = 1;
-	const char* scoreText_wall;
-	const char* scoreText_cpu;
-
-	void Draw()
-	{
-		DrawCircle(x, y, radius, GREEN);
-	}
-
-	void Update()
-	{
-		x = x + speed_x;
-		y = y + speed_y;
-
-
-		//Screen Fizik
-		if (x + radius >= GetScreenWidth())
-		{ 
-			speed_x *= -1;
-			cout << "hello" << endl;
-			scoreText_wall = TextFormat("Score: %i", min_wall++);
-		}
-		if (x - radius <= 0)
-		{
-			speed_x *= -1;
-			cout << "dallal" << endl;
-			scoreText_cpu = TextFormat("score: %i", min_cpu++);
-		}
-		if (y + radius >= GetScreenHeight() || y - radius <= 0)
-			speed_y *= -1;
-
-		DrawText(scoreText_wall, 560, 10, 20, BLUE);
-		DrawText(scoreText_cpu, 150, 10, 20, BLUE);
-	}
-};
-
 class Wall
 {
 public:
@@ -58,7 +13,7 @@ public:
 	//const char* text;
 	void Draw()
 	{
-		DrawRectangle(pos_x, pos_y, width, higth, BLUE);
+		DrawRectangle(pos_x, pos_y, width, higth, WHITE);
 	}
 
 	void Update()
@@ -92,7 +47,7 @@ public:
 
 	void Draw()
 	{
-		DrawRectangle(pos_x , pos_y, width, higth, BLUE);
+		DrawRectangle(pos_x , pos_y, width, higth, WHITE);
 	}
 
 	void Update()
@@ -108,6 +63,50 @@ public:
 	}
 };
 
+class Ball
+{
+public:
+	int radius;
+	float x, y;
+	int speed_x, speed_y;
+
+	//Score
+	int min_wall = 1;
+	int min_cpu = 1;
+	const char* scoreText_wall;
+	const char* scoreText_cpu;
+
+	void Draw()
+	{
+		DrawCircle(x, y, radius, WHITE);
+	}
+
+	void Update()
+	{
+		x = x + speed_x;
+		y = y + speed_y;
+
+
+		//Screen Fizik
+		if (x + radius >= GetScreenWidth())
+		{
+			speed_x *= -1;
+			cout << "hello" << endl;
+			scoreText_wall = TextFormat("Score: %i", min_wall++);
+		}
+		if (x - radius <= 0)
+		{
+			speed_x *= -1;
+			cout << "dallal" << endl;
+			scoreText_cpu = TextFormat("score: %i", min_cpu++);
+		}
+		if (y + radius >= GetScreenHeight() || y - radius <= 0)
+			speed_y *= -1;
+
+		DrawText(scoreText_wall, 560, 10, 20, BLUE);
+		DrawText(scoreText_cpu, 150, 10, 20, BLUE);
+	}
+};
 
 Ball ball;
 Wall wall;
@@ -168,7 +167,7 @@ int main()
 			ClearBackground(BLACK);
 
 			//Drawing 
-			DrawLine(ScreenWidth / 2, 0, ScreenWidth / 2, ScreenHigth, RED); 
+			DrawLine(ScreenWidth / 2, 0, ScreenWidth / 2, ScreenHigth, WHITE); 
 			ball.Draw();
 			wall.Draw();
 			cpu.Draw();
